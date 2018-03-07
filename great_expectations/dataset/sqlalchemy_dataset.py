@@ -60,11 +60,11 @@ class MetaSqlAlchemyDataSet(DataSet):
 
 class SqlAlchemyDataSet(MetaSqlAlchemyDataSet):
 
-    def __init__(self, connection_string, table_name):
+    def __init__(self, engine, table_name):
         super(SqlAlchemyDataSet, self).__init__()
         # We are intentionally not adding default expectations here, thinking about the future of non-tabular datasets
         self.table_name = table_name
-        self.engine = create_engine(connection_string)
+        self.engine = engine
 
     @MetaSqlAlchemyDataSet.column_map_expectation
     def expect_column_values_to_be_in_set(self,
