@@ -8,6 +8,7 @@
     },
     "tests": [{
       "title": "Basic positive test",
+      "exact_match_out" : false,
       "in":{
         "column": "c1"
       },
@@ -16,6 +17,7 @@
       }
     },{
       "title": "Basic negative test",
+      "exact_match_out" : false,
       "in":{
         "column": "covfefe"
       },
