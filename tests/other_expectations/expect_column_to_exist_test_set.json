@@ -7,7 +7,7 @@
       "c3" : [null,null,null,null]
     },
     "tests": [{
-      "notes": "Basic positive test",
+      "title": "Basic positive test",
       "in":{
         "column": "c1"
       },
@@ -15,7 +15,7 @@
         "success":true
       }
     },{
-      "notes": "Basic negative test",
+      "title": "Basic negative test",
       "in":{
         "column": "covfefe"
       },
