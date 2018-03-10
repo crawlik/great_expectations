@@ -103,6 +103,7 @@ def evaluate_json_test(dataset, expectation_type, test):
               - traceback_substring (if present, the string value will be expected as a substring of the exception_traceback)
     :return: None. asserts correctness of results.
     """
+
     dataset.set_default_expectation_argument('result_format', 'COMPLETE')
 
     if 'title' not in test:
